@@ -1,0 +1,48 @@
+.header {
+  .topbar {
+    background: $topbar-background;
+    padding: 8px 0;
+
+    .top-contact {
+      padding: 8px 0;
+
+      .single-contact {
+        display: inline-block;
+        color: $white;
+        cursor: pointer;
+        line-height: 24px;
+        font-size: 14px;
+
+        &:hover {
+          color: $gray-300;
+        }
+
+        &:last-child {
+          margin-right: 0 !important;
+        }
+
+        i {
+          margin-right: 8px;
+        }
+      }
+    }
+
+    .top-right {
+      display: flex;
+      justify-content: flex-end;
+
+      .qoute a {
+        text-decoration: underline;
+      }
+
+      .dropdown-item {
+        font-size: 14px;
+      }
+    }
+  }
+  .main-nav{
+    background: $white;
+    transition: all 0.6s ease;
+    box-shadow: 0 3px 12px 0 rgb(0 0 0 / 10%);
+  }
+}
