@@ -1,6 +1,6 @@
 .header {
   .topbar {
-    background: $topbar-background;
+    background: $lerui-blue;
     padding: 8px 0;
 
     .top-contact {
@@ -40,9 +40,195 @@
       }
     }
   }
-  .main-nav{
+
+  .main-nav {
     background: $white;
     transition: all 0.6s ease;
     box-shadow: 0 3px 12px 0 rgb(0 0 0 / 10%);
+
+    .nav-item a.nav-link {
+      color: $lerui-black;
+      text-transform: capitalize;
+      position: relative;
+      font-weight: 600;
+      padding: 34px 0;
+      margin-right: 30px;
+      &:hover, &.active{
+        color: $lerui-blue;
+        &:before{
+          width: 50%;
+          opacity:1;
+          visibility:visible;
+          transform: scaleY(1);
+        }
+      }
+      &:before{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 4px;
+        background: $lerui-blue;
+        bottom: 0;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition:all 0.3s ease;
+        -moz-transition:all 0.3s ease;
+        transition:all 0.3s ease;
+      }
+      &:after{
+        content: none;
+      }
+    }
+
+    .right-bar{
+      display: inline-block;
+      height: 100%;
+      -webkit-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 118px;
+        height: 100%;
+        transform: skew(-26deg);
+        background: #f3a712;
+        z-index: -1;
+      }
+      .right-nav{
+          position: relative;
+      }
+      ul li {
+          display: inline-block;
+          margin-right: 5px;
+        &:last-child{
+          margin-right: 0;
+        }
+        a{
+            color: #fff;
+            text-align: center;
+            display: block;
+            cursor: pointer;
+            border: 1px solid #fff;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 14px;
+            border-radius: 100%;
+          &:hover{
+              color: #F3A712;
+              border-color: transparent;
+              background: #fff;
+          }
+        }
+      }
+    }
   }
+}
+//
+///* Right Bar */
+
+//.right-bar ul li {
+//  display: inline-block;
+//  margin-right: 5px;
+//}
+//.right-bar ul li:last-child{
+//  margin:0;
+//}
+//.right-bar .right-nav li a {
+//  color: #fff;
+//  text-align: center;
+//  display: block;
+//  cursor: pointer;
+//  border: 1px solid #fff;
+//  width: 30px;
+//  height: 30px;
+//  line-height: 30px;
+//  font-size: 14px;
+//  border-radius: 100%;
+//}
+//.right-bar .right-nav li a:hover {
+//  color: #F3A712;
+//  border-color: transparent;
+//  background: #fff;
+//}
+//.cart-items{
+//  position:relative;
+//}
+//.cart-items span {
+//  position: absolute;
+//  top: -8px;
+//  background: #179E66;
+//  color: #fff;
+//  display: block;
+//  width: 20px;
+//  height: 20px;
+//  line-height: 20px;
+//  font-size: 13px;
+//  border-radius: 100%;
+//  left: 93%;
+//  display: table-cell;
+//}
+//
+/* Header Search */
+.search-top {
+  position: absolute;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  top: 85px;
+  width: 350px;
+  right: 0;
+  line-height: initial;
+}
+.search-top.active{
+  opacity:1;
+  visibility:visible;
+}
+.search-top .search-form {
+  position: relative;
+  background: #fff;
+  padding: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.33);
+}
+.search-top .search-form input {
+  height: 50px;
+  line-height: 45px;
+  padding: 0 45px 0 20px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  border: none;
+  background: #fff;
+  color: #333;
+  border-radius: 0px;
+  width: 100%;
+  font-size: 14px;
+  border: 1px solid #ebebeb;
+}
+.search-top .search-form button {
+  position: absolute;
+  width: 45px;
+  border: none;
+  top: 15px;
+  line-height: 50px;
+  height: 50px;
+  border-radius: 0px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  right: 16px;
+  background: #2E2751;
+  color: #fff;
+}
+.search-top .search-form button:hover{
+  color:#fff;
+  background:#F3A712;
+}
+.search-top .search-top.active .search i:before{
+  content:"\f00d";
 }
