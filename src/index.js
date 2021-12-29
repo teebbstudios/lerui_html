@@ -5,3 +5,6 @@ import 'jquery';
 
 import 'bootstrap';
 
+import 'owl.carousel';
+
+import 'js/active';
