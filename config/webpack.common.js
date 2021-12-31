@@ -44,8 +44,14 @@ module.exports = {
         // Generates an HTML file from a template
         // Generates deprecation warning: https://github.com/jantimon/html-webpack-plugin/issues/1501
         new HtmlWebpackPlugin({
+            filename: 'index.html',
             favicon: paths.src + '/img/favicon.png',
             template: paths.src + '/pages/index.html', // template file
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'about.html',
+            favicon: paths.src + '/img/favicon.png',
+            template: paths.src + '/pages/about.html', // template file
         }),
     ],
 

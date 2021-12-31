@@ -1,7 +1,3 @@
-/* Tablet Screen */
-/* Hero Agency */
-/* Mobile Screen */
-/* Hero Agency */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   body {
     font-size: 14px;
@@ -12,9 +8,7 @@
   .section-title {
     padding: 0;
   }
-  .section-title.style2 {
-    padding: 0;
-  }
+
   .section-title.text-left {
     padding: 0;
   }
@@ -22,9 +16,11 @@
     h2 {
       font-size: 34px;
     }
+
     .bread-title {
       float: none;
     }
+
     .bread-menu {
       float: none;
       margin-top: 0px;
@@ -32,12 +28,15 @@
   }
   .topbar {
     text-align: center;
+
     .single-contact {
       margin-right: 10px;
+
       &:last-child {
         margin: 0;
       }
     }
+
     .social-icons {
       text-align: center;
       margin: 0;
@@ -52,38 +51,19 @@
     margin-top: 10px;
     float: none;
     text-align: center;
+
     .button {
       display: none;
     }
   }
   .header {
-    .nav-inner {
-      float: left;
-      margin-right: 64px;
-    }
-    .navbar {
-      padding: 0;
-      display: initial;
-      flex-wrap: initial;
-    }
-    .navbar-nav {
-      display: initial;
-    }
-    .nav {
-      li {
-        margin-right: 15px;
-        a {
-          font-size: 14px;
-          &:after {
-            display: none;
-          }
-        }
-        .sub-menu {
-          width: 195px;
-          padding: 12px;
-        }
+    .main-nav .nav-item {
+
+      a.nav-link {
+        margin-right: 20px;
       }
     }
+
   }
   .right-bar {
     .right-nav {
@@ -92,12 +72,14 @@
           color: #333;
           width: auto;
           height: auto;
+
           &:hover {
             color: #F3A712;
           }
         }
       }
     }
+
     ul {
       li {
         margin-right: 8px;
@@ -108,24 +90,30 @@
     .middle-header {
       top: 83px;
     }
+
     .logo {
       margin-top: 14px;
     }
+
     .nav-inner {
       margin-right: 92px;
       float: right;
     }
+
     .nav {
       li {
         margin-right: 10px;
+
         a {
           font-size: 13px;
         }
       }
     }
+
     .button {
       top: 10px;
     }
+
     .lerui-btn {
       padding: 10px 5px;
       font-size: 13px;
@@ -138,10 +126,13 @@
         line-height: 50px;
       }
     }
+
     height: 550px !important;
+
     .single-slider {
       height: 550px !important;
     }
+
     .welcome-text {
       margin: 109px 0 0;
     }
@@ -158,23 +149,28 @@
     .agency-inner {
       height: 700px !important;
     }
+
     .ageny-main {
       padding-top: 117px;
     }
+
     .hero-text {
       h1 {
         font-size: 45px;
         line-height: 50px;
       }
     }
+
     .a-feature {
       width: 165px;
       padding: 20px 5px;
       margin-right: 10px;
+
       p {
         line-height: 18px;
         font-size: 13px;
       }
+
       h4 {
         font-size: 16px;
       }
@@ -194,6 +190,7 @@
       padding: 8px 15px;
       margin-top: -20px;
     }
+
     .video-play {
       a {
         width: 75px;
@@ -202,6 +199,7 @@
         font-size: 25px;
         top: 50%;
       }
+
       margin-left: -37.5px;
       margin-top: -37.5px;
     }
@@ -210,26 +208,32 @@
     .b-features {
       margin-top: 10px;
     }
+
     h2 {
       margin-bottom: 0;
       font-size: 21px;
       padding-top: 10px;
     }
+
     .single-list-feature {
       h4 {
         font-size: 15px;
         margin-bottom: 5px;
       }
+
       i {
         display: none;
       }
+
       padding: 0;
       margin-top: 10px;
+
       p {
         line-height: 20px;
         font-size: 13px;
       }
     }
+
     .title {
       p {
         display: none;
@@ -241,18 +245,20 @@
       font-size: 14px;
       margin: 0;
     }
+
     h4 {
       a {
         font-size: 18px;
-        //margin-bottom: ;
         color: #28243C;
-        font-size: 18px;
       }
+
       margin-bottom: 5px;
     }
+
     .service-content {
       padding: 30px 15px;
     }
+
     .icon-bg {
       bottom: -30px;
       width: 60px;
@@ -264,11 +270,13 @@
   .call-action {
     .call-inner {
       text-align: center;
+
       h2 {
         font-size: 30px;
         margin-bottom: 10px;
       }
     }
+
     .button {
       float: none;
       text-align: center;
@@ -293,6 +301,7 @@
         background: transparent;
         vertical-align: initial;
         padding: 0;
+
         span {
           width: 100%;
           position: relative;
@@ -300,6 +309,7 @@
           background-size: cover;
         }
       }
+
       .news-body {
         width: 100%;
         display: initial;
@@ -307,13 +317,16 @@
         vertical-align: initial;
         padding: 0;
       }
+
       .lerui-btn {
         width: 122px;
         padding: 10px 00px;
       }
+
       .news-content {
         padding: 20px;
       }
+
       .news-text {
         margin-top: 10px;
       }
@@ -368,372 +381,106 @@
       p {
         font-size: 12px;
       }
+
       top: 4px;
       left: -48px;
     }
+
     .small-title {
       span {
         font-size: 13px;
       }
     }
+
     .price-head {
       padding: 28px 0 20px;
     }
   }
 }
+
 @media only screen and (max-width: 767px) {
   .breadcrumbs {
     padding: 50px 0;
+
     .bread-title {
       float: none;
     }
+
     .bread-menu {
       float: none;
-      margin-top: 0px;
+      margin-top: 0;
+
       span {
         font-size: 15px;
       }
+
       li {
         a {
           font-size: 15px;
         }
       }
     }
+
     h2 {
       font-size: 26px;
-      font-size: 26px;
-      margin-top: 0px;
+      margin-top: 0;
       padding: 0;
     }
   }
   .header {
-    .img-logo {
-      margin: 0;
-    }
-    .text-logo {
-      margin-top: 0;
-    }
-    .nav-inner {
-      float: left;
-      margin-right: 64px;
-    }
-    .navbar {
-      padding: 0;
-      display: initial;
-      flex-wrap: initial;
-    }
-    .navbar-nav {
-      display: initial;
-    }
-    .nav {
-      li {
-        margin-right: 15px;
-        a {
-          font-size: 14px;
-          &:after {
-            display: none;
-          }
+    .main-nav .nav-item {
+      border-bottom: 1px solid #dedede;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      a.nav-link {
+        padding: 10px 0;
+        margin-right: 0;
+        font-size: 14px;
+
+        &:after {
+          content: ' ';
         }
       }
     }
-    .logo {
-      width: 80%;
-      z-index: 9999;
-    }
+
   }
-  .header.style2 {
-    .img-logo {
-      margin: 0;
-    }
-    .text-logo {
-      margin-top: 0;
-    }
-    .middle-header {
-      padding: 0;
-      top: 112px;
-      padding: 0;
-      top: 112px;
-    }
-    .topbar-right {
-      margin-top: 5px;
-    }
-    .topbar {
-      padding: 8px 0 22px;
-    }
-    .slicknav_menu {
-      .slicknav_icon-bar {
-        background: #fff !important;
-      }
-    }
-    .mobile-nav {
-      margin-top: -20px;
-    }
-    .middle-inner {
-      background: #2E2751;
-      z-index: 2035;
-      padding: 22px 20px;
-    }
-    .slicknav_nav {
-      background: #fff;
-      padding: 20px;
-      margin-top: 35px;
-    }
-    .logo {
-      margin-top: 0;
-    }
-    .nav-inner {
-      margin-right: 92px;
-      float: right;
-    }
-    .nav {
-      li {
-        margin-right: 10px;
-        a {
-          font-size: 13px;
-        }
-      }
-    }
-    .button {
-      top: 10px;
-    }
-    .lerui-btn {
-      padding: 10px 5px;
-      font-size: 13px;
-    }
-  }
-  .mobile-nav {
-    position: relative;
-    margin-top: -24px;
-    z-index: 5000;
-    position: relative;
-    margin-top: -21px;
-  }
-  .middle-header {
-    padding: 20px 0 25px;
-  }
+
   .top-contact {
     padding: 0;
   }
-  .hero-slider {
-    .hero-text {
-      h4 {
-        font-size: 13px;
-        padding: 5px 20px;
-        font-size: 13px;
-      }
-      h1 {
-        font-size: 25px;
-        line-height: 32px;
-      }
-      .p-text {
-        max-width: 100%;
-      }
-      .button {
-        .lerui-btn {
-          padding: 10px 15px;
-          font-size: 13px;
-        }
-        margin-top: 25px;
-      }
-    }
-    height: 450px !important;
-    .single-slider {
-      height: 450px !important;
-      background: #fff !important;
-    }
-    .welcome-text {
-      margin: 57px 0 0;
-    }
-  }
-  .section-title.style2 {
-    .section-top {
-      float: none;
-      width: 100%;
-    }
-    .section-bottom {
-      float: none;
-      width: 100%;
-    }
-    .text-style-two {
-      margin-top: 20px;
-      text-align: left;
-    }
-    padding: 0;
-  }
+
   .section-title {
     h1 {
       font-size: 24px;
     }
+
     padding: 0;
   }
-  .menu-area {
-    display: none;
-  }
+
   .topbar {
     .top-contact {
       margin: 0;
     }
+
     text-align: center;
+
     .single-contact {
       margin-right: 10px;
       display: block;
+
       &:last-child {
         margin: 0;
       }
     }
+
     .social-icons {
       text-align: center;
       margin: 0;
       padding: 0;
       float: none;
-    }
-  }
-  .slicknav_nav {
-    li {
-      border-bottom: 1px solid #ebebeb;
-      line-height: 30px;
-      &:last-child {
-        border: none;
-        a {
-          padding-bottom: 0px;
-        }
-      }
-      a {
-        margin: 0;
-        color: #333;
-        background: transparent;
-        overflow: hidden;
-        i {
-          display: none;
-        }
-        &:hover {
-          color: #1A9F68;
-          background: transparent;
-        }
-      }
-      &:hover {
-        background: transparent;
-      }
-      .dropdown {
-        li {
-          &:hover {
-            background: transparent;
-          }
-          a {
-            color: #555;
-            background: transparent;
-            &:hover {
-              color: #1A9F68;
-              background: transparent;
-            }
-          }
-        }
-      }
-      .slicknav_item {
-        background: transparent;
-        &:hover {
-          background: transparent;
-        }
-      }
-    }
-    clear: both;
-    color: #fff;
-    margin: 0;
-    background: transparent;
-    padding-top: 15px;
-    .slicknav_row {
-      padding: 0;
-      margin: 0;
-      padding: 6px 0;
-      font-weight: 500;
-    }
-    a {
-      padding: 0;
-      margin: 0;
-      padding: 6px 0;
-      font-weight: 500;
-    }
-    .slicknav_arrow {
-      color: #666;
-    }
-  }
-  .slicknav_menu {
-    display: block;
-    display: block;
-    background: transparent;
-    padding: 0;
-    .slicknav_icon-bar {
-      box-shadow: none;
-      background: #2E2751 !important;
-      background-color: #1A9F68;
-      box-shadow: none;
-      text-shadow: none;
-      display: block;
-      width: 25px;
-      height: 3px;
-      -webkit-border-radius: 1px;
-      -moz-border-radius: 1px;
-      border-radius: 1px;
-      -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.25);
-      -moz-box-shadow: 0 1px 0 rgba(0,0,0,.25);
-      box-shadow: 0 1px 0 rgba(0,0,0,.25);
-    }
-  }
-  .slicknav_btn {
-    background: transparent;
-    padding: 0;
-    margin: 0;
-    margin-right: 10px;
-  }
-  .skill-image {
-    display: none;
-  }
-  .hero-agency {
-    .video-head {
-      .video {
-        width: 70px;
-        height: 70px;
-        line-height: 70px;
-        font-size: 25px;
-      }
-      margin-top: 15px;
-    }
-    .agency-inner {
-      height: 1000px !important;
-    }
-    .ageny-main {
-      padding-top: 88px;
-    }
-    .hero-text {
-      h4 {
-        font-weight: 500;
-        font-size: 18px;
-      }
-      h1 {
-        font-size: 28px;
-        line-height: 30px;
-      }
-    }
-    .agency-feature {
-      margin-top: 0px;
-    }
-    .a-feature {
-      padding: 20px 5px;
-      margin-right: 0;
-      margin-top: 10px;
-      width: 100%;
-      &:last-child {
-        margin-top: 10px;
-      }
-      p {
-        line-height: 18px;
-        font-size: 13px;
-        font-size: 13px;
-      }
-      h4 {
-        font-size: 14px;
-        margin: 5px 0;
-      }
     }
   }
   body {
@@ -745,10 +492,17 @@
   .section-title.text-left {
     padding: 0;
   }
+  .title-bg {
+    font-size: 100px;
+  }
+  .hero-slider .welcome-text {
+    margin: 80px 0 10px;
+  }
   .topbar-right {
     text-align: center;
     margin-top: 10px;
     float: none;
+
     .button {
       display: none;
     }
@@ -760,12 +514,14 @@
           color: #333;
           width: auto;
           height: auto;
+
           &:hover {
             color: #F3A712;
           }
         }
       }
     }
+
     ul {
       li {
         margin-right: 8px;
@@ -778,13 +534,16 @@
       //padding: ;
       margin: 0;
     }
+
     .testimonial-slider {
       margin: 0;
     }
+
     .client-head {
       display: inline-block;
       float: none;
     }
+
     .t-left {
       h2 {
         font-size: 16px;
@@ -808,6 +567,7 @@
         line-height: 32px;
       }
     }
+
     .modern-img-feature {
       margin-top: 30px;
     }
@@ -816,11 +576,13 @@
     .modern-img-feature {
       margin-top: 30px;
     }
+
     .single-content {
       h1 {
         font-size: 22px;
       }
     }
+
     .small-list-feature {
       margin-top: 40px;
     }
@@ -832,6 +594,7 @@
       margin: 0;
       top: 13px;
     }
+
     .video-play {
       a {
         width: 70px;
@@ -842,36 +605,44 @@
         //margin-top: ;
         top: 50%;
       }
+
       margin-left: -35px;
       margin-top: -35px;
     }
   }
   .features-main {
     margin-top: 30px;
+
     .b-features {
       margin-top: 10px;
     }
+
     h2 {
       margin-bottom: 0;
       font-size: 21px;
       padding-top: 10px;
     }
+
     .single-list-feature {
       h4 {
         font-size: 15px;
         margin-bottom: 5px;
       }
+
       i {
         display: block;
         position: relative;
       }
+
       padding: 0;
       margin-top: 10px;
+
       p {
         line-height: 20px;
         font-size: 13px;
       }
     }
+
     .title {
       p {
         display: block;
@@ -884,6 +655,7 @@
       font-size: 14px;
       margin: 0;
     }
+
     h4 {
       a {
         font-size: 18px;
@@ -891,11 +663,14 @@
         color: #28243C;
         font-size: 18px;
       }
+
       margin-bottom: 5px;
     }
+
     .service-content {
       padding: 30px 15px;
     }
+
     .icon-bg {
       bottom: -30px;
       width: 60px;
@@ -915,11 +690,13 @@
   .call-action {
     .call-inner {
       text-align: center;
+
       h2 {
         font-size: 23px;
         margin-bottom: 10px;
       }
     }
+
     .button {
       float: none;
       text-align: center;
@@ -963,6 +740,7 @@
         background: transparent;
         vertical-align: initial;
         padding: 0;
+
         span {
           width: 100%;
           position: relative;
@@ -970,6 +748,7 @@
           background-size: cover;
         }
       }
+
       .news-body {
         width: 100%;
         display: initial;
@@ -977,13 +756,16 @@
         vertical-align: initial;
         padding: 0;
       }
+
       .lerui-btn {
         width: 122px;
         padding: 10px 00px;
       }
+
       .news-content {
         padding: 20px;
       }
+
       .news-text {
         margin-top: 10px;
       }
@@ -991,9 +773,11 @@
   }
   .error {
     padding: 100px 0;
+
     .error-inner {
       text-align: left;
       margin-bottom: 25px;
+
       h2 {
         font-size: 30px;
         margin: 10px 0;
