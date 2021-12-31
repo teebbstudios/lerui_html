@@ -53,6 +53,11 @@ module.exports = {
             favicon: paths.src + '/img/favicon.png',
             template: paths.src + '/pages/about.html', // template file
         }),
+        new HtmlWebpackPlugin({
+            filename: 'contact.html',
+            favicon: paths.src + '/img/favicon.png',
+            template: paths.src + '/pages/contact.html', // template file
+        }),
     ],
 
     // Determine how modules within the project are treated

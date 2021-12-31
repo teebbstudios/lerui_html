@@ -680,7 +680,7 @@
 /*=============================
 	Case Area
 ===============================*/
-.case-area, .contact-area {
+.case-area, .contact-area, .map-area{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -961,6 +961,7 @@
     p {
       color: #fff;
       font-size: 14px;
+
       span {
         font-size: 17px;
         font-weight: 800;
@@ -975,3 +976,380 @@
     }
   }
 }
+
+/*====================================
+	BreadCrumbs CSS
+======================================*/
+.breadcrumbs {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 60px 0;
+  z-index: 10;
+
+  &::before {
+    background: #000;
+    opacity: 0.6;
+  }
+
+  .bread-title {
+    z-index: 3333;
+    position: relative;
+    border-radius: 5px;
+
+    p {
+      color: #fff;
+      font-size: 13px;
+    }
+  }
+
+  h2 {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    line-height: 45px;
+    z-index: 333;
+    position: relative;
+    font-weight: 700;
+  }
+
+  .bread-list {
+    display: block;
+    margin-top: 15px;
+  }
+
+  ul {
+    margin-bottom: 0;
+    li {
+      display: inline-block;
+
+      span {
+        margin: 0px 10px;
+        font-size: 11px;
+        font-weight: 400;
+        color: #fff;
+      }
+
+      a {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: capitalize;
+
+        &:hover {
+          opacity: 0.8;
+          color: #fff !important;
+        }
+      }
+    }
+  }
+
+  .bread-menu {
+    color: #fff;
+    z-index: 333;
+    position: relative;
+    line-height: initial;
+    padding-left: 30px;
+    font-size: 0;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 32px;
+      height: 5px;
+      left: 0;
+      background: $lerui-blue;
+      margin-top: -2.5px;
+    }
+
+    li {
+      a {
+        color: #fff;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        font-size: 18px;
+        font-weight: 500;
+        padding-right: 8px;
+        margin-right: 8px;
+        display: inline-block;
+
+        &:hover {
+          color: $lerui-blue;
+        }
+      }
+
+      &:last-child {
+        margin: 0;
+        padding: 0;
+      }
+
+      + {
+        li {
+          &::before {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: "\f105";
+            left: -7px;
+            position: relative;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.breadcrumbs.bread-blog {
+  text-align: center;
+  background: #F4F9FC;
+  margin: 0;
+  padding: 20px;
+
+  .bread-menu {
+    &:before {
+      display: none;
+    }
+
+    ul {
+      li {
+        position: relative;
+
+        &:before {
+          content: "";
+          position: absolute;
+          right: 7.5px;
+          width: 12px;
+          font-size: 0;
+          height: 12px;
+          left: auto;
+          background: $lerui-blue;
+          top: 6px;
+          border-radius: 100%;
+          border: 2px solid #fff;
+        }
+
+        &:last-child {
+          &:before {
+            display: none;
+          }
+        }
+
+        a {
+          color: #2E2751;
+          font-size: 15px;
+          margin-right: 15px;
+          padding-right: 15px;
+          position: relative;
+
+          &:hover {
+            color: $lerui-blue !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*======================================
+	Contact Form CSS
+========================================*/
+.contact-form-area {
+  background: #fff;
+  padding: 40px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.18);
+  border-top: 3px solid $lerui-blue;
+  h4 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .form-group {
+    margin: 0;
+    margin-top: 20px;
+    position: relative;
+    input {
+      height: 50px;
+      border: 1px solid rgba(204, 204, 204, 0.58);
+      width: 100%;
+      display: block;
+      border-radius: 0px;
+      padding: 0px 40px 0 15px;
+      -webkit-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+      font-size: 14px;
+      font-weight: normal;
+      &:focus {
+        border-color: #7e868f;
+      }
+      &:hover {
+        border-color: #7e868f;
+      }
+    }
+    textarea {
+      height: 170px;
+      border: 1px solid #dfdfdf;
+      width: 100%;
+      display: block;
+      border-radius: 5px;
+      padding: 15px;
+      resize: none;
+      -webkit-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+      border-radius: 0px;
+      padding-right: 40px;
+      font-weight: normal;
+    }
+    .icon {
+      position: absolute;
+      right: 15px;
+      z-index: 33;
+      color: $lerui-blue;
+      top: 12px;
+    }
+  }
+  .form-group.textarea {
+    .icon {
+      top: 15px;
+      right: 15px;
+    }
+  }
+}
+.contact-form-area.faq-form {
+  background: #2E2751;
+  padding: 30px;
+  .form-group {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    input {
+      background: transparent;
+      border: none;
+      color: #ccc;
+      border-bottom: 1px solid #ffffff52;
+      &::-webkit-input-placeholder {
+        opacity: 1;
+        color: #ccc !important;
+      }
+      &::-moz-placeholder {
+        opacity: 1;
+        color: #ccc !important;
+      }
+      &::-ms-input-placeholder {
+        opacity: 1;
+        color: #ccc !important;
+      }
+    }
+    textarea {
+      &::-webkit-input-placeholder {
+        opacity: 1;
+        color: #ccc !important;
+      }
+      &::-moz-placeholder {
+        opacity: 1;
+        color: #ccc !important;
+      }
+      &::-ms-input-placeholder {
+        opacity: 1;
+        color: #ccc !important;
+      }
+      background: transparent;
+      height: 120px;
+      border: none;
+      border-bottom: 1px solid #ffffff52;
+      color: #ccc;
+    }
+  }
+  .form-group.button {
+    text-align: left;
+    .bizwheel-btn {
+      &:hover {
+        background: #fff;
+        color: #F3A712;
+      }
+    }
+  }
+}
+.contact-form-area.service {
+  padding: 0;
+  box-shadow: none;
+  background: transparent;
+  border: none;
+  .form-group {
+    textarea {
+      height: 120px;
+    }
+  }
+}
+
+/*======================================
+	Contact Box CSS
+========================================*/
+/* Google Map */
+/*======================================
+	End Contact Box CSS
+========================================*/
+.single-contact-box {
+  text-align: left;
+  margin-bottom: 20px;
+  position: relative;
+  .c-icon {
+    float: left;
+    margin-right: 20px;
+  }
+  &:last-child {
+    margin: 0;
+  }
+  i {
+    font-size: 25px;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    background: #2E2751;
+    color: #fff;
+    text-align: center;
+    border-radius: 100%;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  &:hover {
+    i {
+      background: #179E66;
+      color: #fff;
+    }
+  }
+  h4 {
+    color: #2E2751;
+    display: block;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    font-size: 18px;
+    line-height: inherit;
+    margin-bottom: 5px;
+  }
+}
+#myMap {
+  height: 500px;
+  width: 100%;
+  border-radius: 0px;
+}
+.vc_custom_1578564488430 {
+  font-size: 20px !important;
+  line-height: 28px;
+}
+.contact-box-main {
+  .contact-title {
+    h2 {
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+    margin-bottom: 20px;
+  }
+}
+
