@@ -5,6 +5,9 @@
   p {
     font-size: 14px;
   }
+  #map p {
+    font-size: unset;
+  }
   .section-title {
     padding: 0;
   }
@@ -487,6 +490,9 @@
   }
   p {
     font-size: 14px;
+  }
+  #map p {
+    font-size: unset;
   }
   .section-title.text-left {
     padding: 0;

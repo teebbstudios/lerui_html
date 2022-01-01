@@ -58,6 +58,26 @@ module.exports = {
             favicon: paths.src + '/img/favicon.png',
             template: paths.src + '/pages/contact.html', // template file
         }),
+        new HtmlWebpackPlugin({
+            filename: 'products.html',
+            favicon: paths.src + '/img/favicon.png',
+            template: paths.src + '/pages/products.html', // template file
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'product-detail.html',
+            favicon: paths.src + '/img/favicon.png',
+            template: paths.src + '/pages/product-detail.html', // template file
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'news.html',
+            favicon: paths.src + '/img/favicon.png',
+            template: paths.src + '/pages/news.html', // template file
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'news-detail.html',
+            favicon: paths.src + '/img/favicon.png',
+            template: paths.src + '/pages/news-detail.html', // template file
+        }),
     ],
 
     // Determine how modules within the project are treated
