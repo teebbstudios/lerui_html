@@ -8,6 +8,9 @@
   #map p {
     font-size: unset;
   }
+  .section {
+    padding: 60px 0;
+  }
   .section-title {
     padding: 0;
   }
@@ -400,6 +403,9 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .section {
+    padding: 50px 0;
+  }
   .breadcrumbs {
     padding: 50px 0;
 
