@@ -53,14 +53,18 @@
         });
     });
 
-    $(document).ready(function (){
+    /*====================================
+        MainMenu JS
+     =====================================*/
+    $(window).on('load', function () {
         var topbar = $('.topbar');
         var mainNav = $('.main-nav');
+        var body = $('body');
         var topbarHeight = topbar.height();
         var mainNavHeight = mainNav.height();
-        var body = $('body');
         $(window).on('scroll', function () {
-            if ($(window).scrollTop() >= topbarHeight + 20) {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > topbarHeight) {
                 topbar.hide();
                 mainNav.addClass('fixed');
                 body.css('padding-top', topbarHeight + mainNavHeight);
