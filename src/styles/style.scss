@@ -42,7 +42,13 @@
     background: $white;
     transition: all 0.6s ease;
     box-shadow: 0 3px 12px 0 rgb(0 0 0 / 10%);
-
+    &.fixed{
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 999;
+      border-top: 1px solid #dedede;
+    }
     .dropdown:hover .dropdown-menu {
       display: block;
       margin-top: 0; // remove the gap so it doesn't close
@@ -990,7 +996,7 @@
 
   &::before {
     background: #000;
-    opacity: 0.6;
+    opacity: 0.2;
   }
 
   .bread-title {
@@ -1372,4 +1378,12 @@
   p {
     color: #666666;
   }
+}
+
+.preloader{
+  background: rgba(255, 255, 255, 1) none repeat scroll 0 0;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 999999;
 }

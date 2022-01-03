@@ -13,15 +13,15 @@
 			Portfolio Details JS
 		======================================*/
     $('.home-slider').owlCarousel({
-        items:1,
-        autoplay:false,
-        autoplayTimeout:5000,
+        items: 1,
+        autoplay: false,
+        autoplayTimeout: 5000,
         smartSpeed: 400,
-        autoplayHoverPause:true,
-        loop:true,
-        merge:true,
-        nav:true,
-        dots:true,
+        autoplayHoverPause: true,
+        loop: true,
+        merge: true,
+        nav: true,
+        dots: true,
         navText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>'],
     });
 
@@ -43,14 +43,32 @@
         activeOverlay: false,        // Set CSS color to display scrollUp active point, e.g '#00FFFF'
         zIndex: 99999                // Z-Index for the overlay
     });
-    //
-    // /*====================================
-    //     Preloader JS
-    // ======================================*/
-    // jQuery(window).load(function() {
-    //     jQuery(".preeloader").fadeOut('slow', function(){
-    //         jQuery(this).remove();
-    //     });
-    // });
+
+    /*====================================
+        Preloader JS
+    ======================================*/
+    $(window).on('load', function () {
+        $('.preloader').fadeOut('slow', function () {
+            $(this).remove();
+        });
+    });
+
+    var topbar = $('.topbar');
+    var topbarHeight = topbar.height();
+    var mainNav = $('.main-nav');
+    var headerHeight = $('.header').height();
+    var body = $('body');
+    $(window).on('scroll', function () {
+        if ($(window).scrollTop() >= topbarHeight + 20) {
+            topbar.hide();
+            mainNav.addClass('fixed');
+            body.css('padding-top', headerHeight);
+        } else {
+            topbar.show();
+            mainNav.removeClass('fixed');
+            body.css('padding-top', 0);
+        }
+    });
+
 
 })(jQuery);
