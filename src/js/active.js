@@ -56,14 +56,14 @@
     $(document).ready(function (){
         var topbar = $('.topbar');
         var mainNav = $('.main-nav');
+        var topbarHeight = topbar.height();
+        var mainNavHeight = mainNav.height();
         var body = $('body');
         $(window).on('scroll', function () {
-            var topbarHeight = topbar.height();
-            var headerHeight = $('.header').height();
             if ($(window).scrollTop() >= topbarHeight + 20) {
                 topbar.hide();
                 mainNav.addClass('fixed');
-                body.css('padding-top', headerHeight);
+                body.css('padding-top', topbarHeight + mainNavHeight);
             } else {
                 topbar.show();
                 mainNav.removeClass('fixed');
